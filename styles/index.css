@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+header h1{
+    text-align: center;
+    padding: 20px;
+    
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+    
+
+}
+
+/* galeria */
+
+.card{
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(128, 128, 128);
+    
+}
+
+.card > img{
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.card :hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.card > h3 {
+  
+    text-align: center;
+    font-size: .9rem;
+    padding: 5px 10px;
+}
+
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+ main{
+    grid-template-columns: 1fr 1fr;
+ }
+
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+    main{
+        grid-template-columns: 1fr 1fr;
+     }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+     }
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+    main{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+
+    main{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+     }
+ } 
